@@ -1,0 +1,139 @@
+*,*::after,::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+    padding: 150px 0;
+    place-content: center;
+}
+
+.card{
+    display:flex;
+    background-color: hsl(244, 38%, 16%);
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.content{
+    color: white;
+    text-align: center;
+    width: 40%;
+    margin: 50px;
+}
+
+img{
+    width: 100%;
+}
+
+.overlay{
+    background-color: hsl(277, 47%, 49%);
+    width:516.1px;
+    height: 430px;
+    position: absolute;
+    place-content: center;
+    margin-top:-431px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+h1{
+    width: 350px;
+    text-align: start;
+
+}
+.spn{
+    color: rgb(150, 64, 231);
+}
+
+p{
+    text-align: start;
+    width: 350px;
+    line-height: 25px;
+    color: hsl(246, 14%, 71%);
+}
+
+.data{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    gap: 40px;
+    font-size: 700;
+}
+
+div{
+    color: hsl(246, 14%, 71%);
+    font-size: 700;
+}
+h2{
+    color: white;
+}
+
+.attribution{
+    text-align: center;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none; 
+    color:whitesmoke; 
+}
+
+a:hover{
+    color: blue;
+    transition: 0.3 ease-in-out;
+}
+@media screen and (max-width:375px){
+
+        .card{
+            flex-direction: column-reverse;
+            width: 320px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .content{
+            width:100%;
+            margin: 20px auto;
+        }
+
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .overlay{
+            width:100%;
+            position: absolute;
+            height: 268px;
+            margin-top: -270px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        h1{
+            text-align: center;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        p{
+            text-align: center;
+            max-width: 280px;
+            margin: auto;
+
+        }
+
+        .data{
+            flex-direction: column;
+            gap: 30px;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        .attribution{
+            max-width: 250px;
+            margin: auto;
+        }
+}
+
